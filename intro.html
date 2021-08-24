@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Step - Responsive Personal Portfolio Template">
+        <meta name="keywords" content="Html, Css, jQuery, JavaScript, Step, responsive, onepage, personal, Portfolio, design, creative, template">
+        
+        <!-- Title -->
+        <title>Step - Responsive Personal Portfolio Template</title>
+        <!-- Favicon -->
+        <link rel="icon" href="https://via.placeholder.com/80x80">
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,800">
+                
+        <!-- Font Awesome Css -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <!-- Bootstrap Css -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- Main Style Css -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Colors Css -->
+        <link rel="stylesheet" href="css/colors/orange_color.css">
+        
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+        
+        <style>
+            
+            body {
+                background-color: #fff;
+            }
+            
+            .header {
+                background: url('https://via.placeholder.com/1920x1080') center center no-repeat fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                position: relative;
+                height: 80vh;
+                overflow: hidden;
+            }
+            
+            .header .overlay {
+                background: linear-gradient(135deg, rgba(0, 0, 0, 0.95) 0%, rgba(117, 116, 116, .4) 100%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                padding: 110px 0;
+                color: #fff;
+            }
+            
+            .header h1 {
+                font-size: 40px;                
+                font-weight: 800;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+                background: linear-gradient(to right, #f7971c, #f34a4a);
+                -webkit-background-clip: text;
+                color: transparent;
+                margin-top: 30px;
+                font-family: 'Montserrat', sans-serif;
+            }
+            
+            .header h3 {
+                margin: 30px 0 35px;
+                color: #c3c0c0;
+                letter-spacing: .7px;
+                line-height: 1.4;
+            }
+            
+            .header .main-btn {
+                min-width: 175px;
+            }
+            
+            .header .main-btn:before {
+                content: '\f23d';
+                font-family: 'FontAwesome';
+                margin-right: 8px;
+            }
+            
+            .main-demos {
+                padding-top: 110px;
+                padding-bottom: 80px;
+            }
+            
+            .main-demos .inner {
+                margin-bottom: 30px;
+                box-shadow:  0px 8px 14px rgba(0, 0, 0, .1);
+            }
+            
+            .main-demos .inner:hover{
+                transform: translateY(-6px);
+            }
+            
+            .main-demos .inner img {
+                width: 100%;
+            }
+            
+            .main-demos .inner h5 {
+                padding: 20px 0;
+                background: linear-gradient(to right, #f7971c, #f34a4a);
+                -webkit-background-clip: text;
+                color: transparent;
+                text-transform: uppercase;
+                letter-spacing: .3px;
+                font-weight: 800;
+                font-size: 15px;
+            }
+            
+            .footer {
+                margin-top: 0;
+            }
+            
+        </style>
+       
+    </head>
+    <body>
+        
+        <!-- ========== Start Loading ========== -->
+        
+        <div class="preloader">
+            <div class="loading-inner">
+            </div>
+        </div>
+
+        <!-- ========== End Loading ========== -->
+        
+        <!-- ========== Start Home ========== -->
+        
+        <section class="header text-center">
+            <div class="overlay">
+                <div class="container">
+                    <h1>Step.</h1>
+                    <h3>Responsive Personal Portfolio Template</h3>
+                    <div class="my-btn">
+                        <a href="#" class="main-btn">Purchase</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ========== End Home ========== -->
+        
+        <!-- ========== Start Main Demos ========== -->
+        
+        <section class="main-demos text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="inner">
+                            <a href="index.html">
+                                <img class="img-responsive" src="images/intro/1.png" alt="">
+                                <h5>Dark Version</h5>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="inner">
+                            <a href="index-light.html">
+                                <img class="img-responsive" src="images/intro/2.png" alt="">
+                                <h5>Light Version</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ========== End Main Demos ========== -->
+        
+        <!-- ========== Start Footer ========== -->
+        
+        <footer class="footer text-center" >
+            <div class="container">
+                <a class="logo" href="#">Step.</a>
+                <ul class="footer-social-icons list-unstyled">
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-behance"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-dribbble"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+                <div class="copyright">
+                    <p>All Right Reserved &copy; 2019 <a href="#">ThemeMix</a></p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- ========== End Footer ========== -->
+        
+        <!-- ========== Js ========== -->
+
+        <!-- jQuery -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <!-- Bootstrap Js -->
+        <script src="js/bootstrap.min.js"></script>
+        <!--  WOW Js  -->
+        <script src="js/wow.min.js"></script>
+        <!-- Custom Js -->
+        <script src="js/custom.js"></script>
+    </body>
+</html>

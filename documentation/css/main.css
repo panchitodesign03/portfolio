@@ -1,0 +1,167 @@
+/* --------------------------------------
+   Global
+-----------------------------------------*/
+
+body {
+    font-family: 'verdana','arial',sans-serif;
+    color: #2e343f;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: #2a2e31;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.clearfix {
+    clear: both;
+}
+
+ul:not(.list-of-links) {
+    list-style-type: none;
+    margin: 0;
+    padding: 0
+}
+
+a, li {
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+a {
+    color: #0035ff;
+}
+
+pre {
+    padding: 20px;
+    margin: 0;
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 1.6;
+    background: #292929;
+    color: #fff;
+    display: block;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+pre span {
+    color: #aaa;
+}
+
+pre span.yellow {
+    background-color: #e0e035;
+    color: #000;
+}
+
+pre span.red {
+    background-color: #cc4b4b;
+    color: #000;
+}
+
+pre span.blue {
+    background-color: skyblue;
+    color: #000;
+}
+
+
+/* --------------------------------------
+   Menu
+-----------------------------------------*/
+
+.menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 190px;
+    background-color: #2a2e31;
+    font-size: 13px;
+    padding: 30px 0 !important;
+    overflow-y: auto;
+}
+
+.menu li {
+    width: 100%;
+}
+
+.menu li a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    padding: 7px 12px;
+    cursor: pointer;
+}
+
+.menu li a:hover {
+    background-color: #27292b;
+    color: #fff;
+}
+
+.menu li a.active {
+    background-color: #f7971c;
+    color: #fff;
+}
+
+.menu li a:active {
+    color: #868080;
+}
+
+/* --------------------------------------
+   Page Content
+-----------------------------------------*/
+
+.page-content > div {
+    float: right;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.page-content > div:nth-of-type(odd) {
+    background-color: #e8e6ef;
+}
+
+.page-content > div:nth-of-type(even) {
+    background-color: #f1eff7;
+}
+
+.page-content .introduction h1 {
+    width: 100%;
+    font-size: 24px;
+    margin-bottom: 5px
+}
+
+.page-content h2 {
+    width: 100%;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin: 0
+}
+
+.page-content .line {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-top: 1px solid #cfcfcf;
+}
+
+.page-content > div p {
+    width: 100%
+}
+
+.page-content > div p span {
+    color: #000;
+    font-weight: bold
+}
+
+.page-content > div a {
+    font-weight: bold
+}

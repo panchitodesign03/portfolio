@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Step - Responsive Personal Portfolio Template - Documentation</title>
+        <link rel="icon" href="images/icon.png">
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <ul class="menu">
+            <li><a href="#introduction" class="active">Introduction</a></li>
+            <li><a href="#preloader">Preloader</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Section</a></li>
+            <li><a href="#services">Services Section</a></li>
+            <li><a href="#resume">Resume Section</a></li>
+            <li><a href="#facts">Facts Section</a></li>
+            <li><a href="#testimonials">Testimonials Section</a></li>
+            <li><a href="#blog">Blog Section</a></li>
+            <li><a href="#contact">Contact Section</a></li>
+            <li><a href="#footer">Footer Section</a></li>
+            <li><a href="#thank-you">Thank you</a></li>
+        </ul>
+        <div class="page-content">
+            
+            <!-- Introduction -->
+            <div id="introduction" class="introduction section">
+                <h1>Step - Responsive Personal Portfolio Template</h1>
+                <h2>documentation</h2>
+                <div class="line"></div>
+                <ul>
+                    <li>Created: 01/12/2019</li>
+                    <li>Latest update: 01/12/2019</li> 
+                    <li>By:
+						<a href="#">
+							ThemeMix
+                        </a>
+                    </li>
+                </ul>
+                <p>
+                    Step - is a Responsive Personal Portfolio Template suitabe for Resume or Portfolio websites designed for creative designers, developers, freelancers or pretty much any profession. This Template is 100% responsive, well organized and very easy to customize..
+                    <br><br>
+					It's available in Light and Dark Versions.
+                    Step is better way to present your modern Portfolio/ Resume.
+                </p>
+            </div>
+            <!-- Introduction -->
+            
+            <!-- Preloader -->
+            <div id="preloader" class="preloader section">
+                <h2>turn off Preloader</h2>
+                <div class="line"></div>
+                <p>
+                    Open the <span>index.html</span> file using any text editor then look for the following code and remove them.
+                </p>
+                <pre>
+<span>&lt;!-- ========== Start Loading ========== --></span>
+
+&lt;div class="preloader">
+    &lt;div class="loading-inner">
+    &lt;/div>
+&lt;/div>
+
+<span>&lt;!-- ========== End Loading ========== --&gt;</span></pre>
+                <p>
+                    Save the file and refresh your browser.
+                </p>
+            </div>
+            <!-- Preloader -->
+            
+            <!-- Home -->
+            <div id="home" class="home section">
+                <h2>Home</h2>
+                <div class="line"></div>
+                <p>
+                    To change home background image put your new image in 'images' folder (recommended size 1920px * 1080px),
+                    The name of image should be <span>'home'</span> and image extension should be <span>'jpg'</span>.<br>
+                    Then open the <span>css/main.css</span> file using any text editor then look for the following code and replace blue highlighted text with your new image's path, name and extension like this <span>url('../images/home.jpg')</span>.
+                </p>
+                <pre>
+.home {
+    background: <span class="blue">url('https://via.placeholder.com/1920x1080')</span> center center no-repeat fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}</pre>
+                <p>
+                    To edit the text in 'Home' Open the <span>index.html</span> file using any text editor then look for the following code and replace yellow highlighted text.<br>
+                </p>
+                <pre>
+<span>&lt;!-- ========== Start Home ========== --></span>
+
+&lt;section class="home" id="home">
+    &lt;div class="overlay">
+        &lt;div class="container">
+            &lt;div class="intro display-table">
+                &lt;div class="display-table-cell">
+                    &lt;h3><span class="yellow">Hello, My name is</span>&lt;/h3>
+                    &lt;h1><span class="yellow">Razan Smith</span>&lt;/h1>
+                    &lt;p><span class="yellow">A Creative Freelancer &amp; Full Stack Developer</span>&lt;/p>
+                    &lt;div class="my-btn">
+                        &lt;a href="#about" class="main-btn know-more"><span class="yellow">Know More</span>&lt;/a>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div> 
+&lt;/section>
+
+<span>&lt;!-- ========== End Home ========== --></span></pre>
+                
+                <p>
+                    Save the files and refresh your browser.
+                </p>
+            </div>
+            <!-- Home -->
+            
+            <!-- About Section -->
+            <div id="about" class="about section">
+                <h2>About Section</h2>
+                <div class="line"></div>
+                <p>
+                    To edit the text in 'About Section' Open the <span>index.html</span> file using any text editor then look for the following code and replace yellow highlighted text.<br>
+                    To change link of button replace red highlighted text with your link and replace yellow highlighted text with your button name.<br>
+                    To change About image put your new image in 'images' folder (recommended size 500px * 573px),
+                    The name of image should be <span>'about'</span> and image extension should be <span>'jpg'</span>, 
+                    then replace blue highlighted text with your new image's path, name and extension like this <span>"images/about.jpg"</span>.
+                </p>
+                <pre>
+<span>&lt;!-- ========== Start About Me ========== --></span>
+
+&lt;section class="about-me" id="about">
+    &lt;div class="container">
+        &lt;div class="row">
+            &lt;div class="col-lg-5 col-md-6">
+                &lt;div class="about-image">
+                    &lt;img class="img-responsive" src="<span class="blue">https://via.placeholder.com/500x573</span>" alt="">
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="col-lg-7 col-md-6">
+                &lt;div class="about-info">
+                    &lt;div class="main-title">
+                        &lt;h3><span class="yellow">About Me</span>&lt;/h3>
+                        &lt;h2><span class="yellow">Who Am I</span>&lt;/h2>
+                    &lt;/div>
+                    &lt;p><span class="yellow">My name is Razan Smith. I'm a Freelance Full Stack Developer based in New York, USA, and I'm very passionate and dedicated to my work .With 6 years experience as a professional Full Stack Developer, I have acquired the skills necessary to build great and premium websites.</span>&lt;/p>
+                    &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>&lt;/p>
+                    &lt;div class="skills">
+                        &lt;div class="row">
+                            &lt;div class="col-sm-4 col-xs-4 skills-xs">
+                                &lt;div class="skills-inner">
+                                    &lt;h4><span class="yellow">Html5</span>&lt;/h4>
+                                    &lt;p>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star-half-empty">&lt;/i>
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="skills-inner">
+                                    &lt;h4><span class="yellow">Css3</span>&lt;/h4>
+                                    &lt;p>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star-half-empty">&lt;/i>
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="skills-inner">
+                                    &lt;h4><span class="yellow">JavaScript</span>&lt;/h4>
+                                    &lt;p>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star-o">&lt;/i>
+                                    &lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+                            &lt;div class="col-sm-4 col-xs-4 skills-xs">
+                                &lt;div class="skills-inner">
+                                    &lt;h4><span class="yellow">jQuery</span>&lt;/h4>
+                                    &lt;p>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star-half-empty">&lt;/i>
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="skills-inner">
+                                    &lt;h4><span class="yellow">VueJs</span>&lt;/h4>
+                                    &lt;p>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star-half-empty">&lt;/i>
+                                        &lt;i class="fa fa-star-o">&lt;/i>
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="skills-inner">
+                                    &lt;h4><span class="yellow">Sass</span>&lt;/h4>
+                                    &lt;p>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star-o">&lt;/i>
+                                    &lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+                            &lt;div class="col-sm-4 col-xs-4 skills-xs">
+                                &lt;div class="skills-inner">
+                                    &lt;h4><span class="yellow">Php</span>&lt;/h4>
+                                    &lt;p>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star-half-empty">&lt;/i>
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="skills-inner">
+                                    &lt;h4><span class="yellow">MySQL</span>&lt;/h4>
+                                    &lt;p>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star-half-empty">&lt;/i>
+                                    &lt;/p>
+                                &lt;/div>
+                                &lt;div class="skills-inner">
+                                    &lt;h4><span class="yellow">Laravel</span>&lt;/h4>
+                                    &lt;p>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star">&lt;/i>
+                                        &lt;i class="fa fa-star-half-empty">&lt;/i>
+                                        &lt;i class="fa fa-star-o">&lt;/i>
+                                    &lt;/p>
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;a href="<span class="red">#</span>" class="main-btn"><span class="yellow">Download CV</span>&lt;/a>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div> 
+    &lt;/div>
+&lt;/section>
+
+<span>&lt;!-- ========== End About Me ========== --></span></pre>
+                <p>
+                    Save the file and refresh your browser.
+                </p>
+            </div>
+            <!-- About Section -->
+            
+            <!-- Services Section -->
+            <div id="services" class="services section">
+                <h2>Services Section</h2>
+                <div class="line"></div>
+                <p>
+                    To edit the text in 'Services Section' Open the <span>index.html</span> file using any text editor then look for the following code and replace yellow highlighted text.
+                </p>
+                <pre>
+<span>&lt;!-- ========== Start Services ========== --></span>
+        
+&lt;section class="services" id="services">
+    &lt;div class="container">
+        &lt;div class="main-title">
+            &lt;h3><span class="yellow">My Services</span>&lt;/h3>
+            &lt;h2><span class="yellow">What Can I Do</span>&lt;/h2>
+        &lt;/div>
+        &lt;div class="row">
+            &lt;div class="col-md-3 col-sm-6">
+                &lt;div class="service">
+                    &lt;div class="service-icon">
+                        &lt;i class="fa fa-pencil fa-lg">&lt;/i>
+                    &lt;/div>
+                    &lt;h4><span class="yellow">Creative Design</span>&lt;/h4>
+                    &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm tempor incididunt ut labore et.</span>&lt;/p>
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="col-md-3 col-sm-6">
+                &lt;div class="service">
+                    &lt;div class="service-icon">
+                        &lt;i class="fa fa-flag fa-lg">&lt;/i>
+                    &lt;/div>
+                    &lt;h4><span class="yellow">Branding</span>&lt;/h4>
+                    &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm tempor incididunt ut labore et.</span>&lt;/p>
+                &lt;/div>
+            &lt;/div>
+			&lt;div class="col-md-3 col-sm-6">
+                &lt;div class="service">
+                    &lt;div class="service-icon">
+                        &lt;i class="fa fa-laptop fa-lg">&lt;/i>
+                    &lt;/div>
+                    &lt;h4><span class="yellow">User Interface</span>&lt;/h4>
+                    &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm tempor incididunt ut labore et.</span>&lt;/p>
+                &lt;/div>
+            &lt;/div>
+			&lt;div class="col-md-3 col-sm-6">
+                &lt;div class="service">
+                    &lt;div class="service-icon">
+                        &lt;i class="fa fa-briefcase fa-lg">&lt;/i>
+                    &lt;/div>
+                    &lt;h4><span class="yellow">User Experience</span>&lt;/h4>
+                    &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm tempor incididunt ut labore et.</span>&lt;/p>
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="col-md-3 col-sm-6">
+                &lt;div class="service">
+                    &lt;div class="service-icon">
+                        &lt;i class="fa fa-code fa-lg">&lt;/i>
+                    &lt;/div>
+                    &lt;h4><span class="yellow">Clean Code</span>&lt;/h4>
+                    &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm tempor incididunt ut labore et.</span>&lt;/p>
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="col-md-3 col-sm-6">
+                &lt;div class="service">
+                    &lt;div class="service-icon">
+                        &lt;i class="fa fa-support fa-lg">&lt;/i>
+                    &lt;/div>
+                    &lt;h4><span class="yellow">Fast Support</span>&lt;/h4>
+                    &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed eiusm tempor incididunt ut labore et.</span>&lt;/p>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/section>
+
+&lt;<span>!-- ========== End Services ========== --></span></pre>
+                <p>
+                    Save the file and refresh your browser.
+                </p>
+            </div>
+            <!-- Services Section -->
+            
+            <!-- Resume Section -->
+            <div id="resume" class="resume section">
+                <h2>Resume Section</h2>
+                <div class="line"></div>
+                <p>
+                    To edit the text in 'Resume Section' Open the <span>index.html</span> file using any text editor then look for the following code and replace yellow highlighted text.
+                </p>
+                <pre>
+&lt;<span>!-- ========== Start Resume ========== --></span>
+        
+&lt;section class="resume" id="resume">
+    &lt;div class="container">
+        &lt;div class="main-title">
+            &lt;h3><span class="yellow">My Resume</span>&lt;/h3>
+            &lt;h2><span class="yellow">My Awesome Story</span>&lt;/h2>
+        &lt;/div>
+        &lt;div class="row">
+            &lt;div class="col-md-6">
+                &lt;div class="education">
+                    &lt;div class="resume-item">
+                        &lt;h4><span class="yellow">Computer Science</span>&lt;/h4>
+                        &lt;label class="resume-date"><span class="yellow">2007 - 2011</span>&lt;/label>
+                        &lt;span><span class="yellow">Harvard University</span>&lt;/span>
+                        &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>&lt;/p>
+                        &lt;div class="icon-box">
+                            &lt;i class="fa fa-graduation-cap">&lt;/i>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;div class="resume-item">
+                        &lt;h4><span class="yellow">Bachelor Degree</span>&lt;/h4>
+                        &lt;label class="resume-date"><span class="yellow">2011 - 2012</span>&lt;/label>
+                        &lt;span><span class="yellow">Harvard University</span>&lt;/span>
+                        &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>&lt;/p>
+                        &lt;div class="icon-box">
+                            &lt;i class="fa fa-graduation-cap">&lt;/i>
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="col-md-6">
+                &lt;div class="experience">
+                    &lt;div class="resume-item">
+                        &lt;h4><span class="yellow">UI/UX Designer</span>&lt;/h4>
+                        &lt;label class="resume-date"><span class="yellow">2012 - 2015</span>&lt;/label>
+                        &lt;span><span class="yellow">Freelance</span>&lt;/span>
+                        &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>&lt;/p>
+                        &lt;div class="icon-box">
+                            &lt;i class="fa fa-suitcase">&lt;/i>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;div class="resume-item">
+                        &lt;h4><span class="yellow">Full Stack Developer</span>&lt;/h4>
+                        &lt;label class="resume-date"><span class="yellow">2015 - 2019</span>&lt;/label>
+                        &lt;span><span class="yellow">Freelance</span>&lt;/span>
+                        &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusm tempor incididunt ut labore et dolore magna aliqua Lorem ipsum dolor sit amet, consectetur adipisicing elit.</span>&lt;/p>
+                        &lt;div class="icon-box">
+                            &lt;i class="fa fa-suitcase">&lt;/i>
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/section>
+
+&lt;!-- ========== End Resume ========== --></pre>
+                <p>
+                    Save the file and refresh your browser.
+                </p>
+            </div>
+            <!-- Resume Section -->
+            
+            <!-- Facts Section -->
+            <div id="facts" class="facts section"> 
+                <h2>Facts Section</h2>
+                <div class="line"></div>
+                <p>
+                    To edit the text in 'Facts Section' Open the <span>index.html</span> file using any text editor then look for the following code and replace yellow highlighted text.<br>
+                    To edit the facts values replace blue highlighted text with the new values.
+                </p>
+                <pre>
+<span>&lt;!-- ========== Start Fun Facts ========== --></span>
+
+&lt;section class="facts">
+    &lt;div class="container">
+        &lt;div class="row">
+            &lt;div class="col-md-3 col-sm-6">
+                &lt;div class="fact-item wow fadeInUp" data-wow-duration="1.7s">
+                    &lt;span class="fact-icon">&lt;i class="fa fa-code">&lt;/i>&lt;/span>
+                    &lt;h4><span class="yellow">projects Done</span>&lt;/h4>
+                    &lt;span class="fact-number" data-from="0" data-to="<span class="blue">640</span>" data-speed="2500">&lt;/span>
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="col-md-3 col-sm-6">
+                &lt;div class="fact-item wow fadeInUp" data-wow-duration="1.7s">
+                    &lt;span class="fact-icon">&lt;i class="fa fa-users">&lt;/i>&lt;/span>
+                    &lt;h4><span class="yellow">Happy Clients</span>&lt;/h4>
+                    &lt;span class="fact-number" data-from="0" data-to="<span class="blue">616</span>" data-speed="2500">&lt;/span>
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="col-md-3 col-sm-6">
+                &lt;div class="fact-item wow fadeInUp" data-wow-duration="1.7s">
+                    &lt;span class="fact-icon">&lt;i class="fa fa-clock-o">&lt;/i>&lt;/span>
+                    &lt;h4><span class="yellow">Hours Of Work</span>&lt;/h4>
+                    &lt;span class="fact-number" data-from="0" data-to="<span class="blue">1100</span>" data-speed="2500">&lt;/span>
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="col-md-3 col-sm-6">
+                &lt;div class="fact-item wow fadeInUp" data-wow-duration="1.7s">
+                    &lt;span class="fact-icon">&lt;i class="fa fa-coffee">&lt;/i>&lt;/span>
+                    &lt;h4><span class="yellow">Coffee Cups</span>&lt;/h4>
+                    &lt;span class="fact-number" data-from="0" data-to="<span class="blue">120</span>" data-speed="2500">&lt;/span>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/section>
+        
+<span>&lt;!-- ========== End Fun Facts ========== --></span></pre>
+                <p>
+                    Save the files and refresh your browser.
+                </p>
+            </div>
+            <!-- Facts Section -->
+            
+            <!-- Testimonials Section -->
+            <div id="testimonials" class="testimonials section">
+                <h2>Testimonials Section</h2>
+                <div class="line"></div>
+                <p>
+                    To edit the text in 'Testimonials Section' Open the <span>index.html</span> file using any text editor then look for the following code and replace yellow highlighted text.<br>
+                    To change testimonials images put your new images in 'images/testimonials' folder (recommended size 100px * 100px) then replace blue highlighted text with your new images's path, name and extension like this <span>"images/testimonials/1.jpg"</span>.
+                </p>
+                <pre>
+<span>&lt;!-- ========== Start Testimonials ========== --></span>
+        
+&lt;section id="testimonials" class="testimonials">
+    &lt;div class="container">
+        &lt;div class="main-title">
+            &lt;h3><span class="yellow">Testimonials</span>&lt;/h3>
+            &lt;h2><span class="yellow">Happy Clients</span>&lt;/h2>
+        &lt;/div>
+        &lt;div class="row">
+            &lt;div class="col-md-12 owl-carousel owl-theme">
+                &lt;!-- New Item -->
+                &lt;div class="testimonial-box">
+                    &lt;div class="client-pic">
+                        &lt;img src="<span class="blue">https://via.placeholder.com/100x100</span>" alt="client">
+                    &lt;/div>
+                    &lt;div class="client-details">
+                        &lt;h6><span class="yellow">Kinan Yalmaz</span>&lt;/h6>
+                        &lt;span><span class="yellow">Web Developer</span>&lt;/span>
+                    &lt;/div>
+                    &lt;div class="clearfix">&lt;/div>
+                    &lt;div class="description">
+                        &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>&lt;/p>
+                    &lt;/div>
+                &lt;/div>
+                &lt;!-- New Item -->
+                &lt;div class="testimonial-box">
+                     &lt;div class="client-pic">
+                        &lt;img src="<span class="blue">https://via.placeholder.com/100x100</span>" alt="client">
+                    &lt;/div>
+                    &lt;div class="client-details">
+                        &lt;h6><span class="yellow">Elina Smith</span>&lt;/h6>
+                        &lt;span><span class="yellow">SEO Manager</span>&lt;/span>
+                    &lt;/div>
+                    &lt;div class="clearfix">&lt;/div>
+                    &lt;div class="description">
+                        &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>&lt;/p>
+                    &lt;/div>
+                &lt;/div>
+                &lt;!-- New Item -->
+                &lt;div class="testimonial-box">
+                    &lt;div class="client-pic">
+                        &lt;img src="<span class="blue">https://via.placeholder.com/100x100</span>" alt="client">
+                    &lt;/div>
+                    &lt;div class="client-details">
+                        &lt;h6><span class="yellow">Jhon Doe</span>&lt;/h6>
+                        &lt;span><span class="yellow">Graphic Designer</span>&lt;/span>
+                    &lt;/div>
+                    &lt;div class="clearfix">&lt;/div>
+                    &lt;div class="description">
+                        &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>&lt;/p>
+                    &lt;/div>
+                &lt;/div>
+                &lt;!-- New Item -->
+                &lt;div class="testimonial-box">
+                    &lt;div class="client-pic">
+                        &lt;img src="<span class="blue">https://via.placeholder.com/100x100</span>" alt="client">
+                    &lt;/div>
+                    &lt;div class="client-details">
+                        &lt;h6><span class="yellow">Verra Ekman</span>&lt;/h6>
+                        &lt;span><span class="yellow">Web Developer</span>&lt;/span>
+                    &lt;/div>
+                    &lt;div class="clearfix">&lt;/div>
+                    &lt;div class="description">
+                        &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</span>&lt;/p>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/section>
+
+<span>&lt;!-- ========== End Testimonials ========== --&gt;</span></pre>
+                <p>
+                    Save the file and refresh your browser.
+                </p>
+            </div>
+            <!-- Testimonials Section -->
+            
+            <!-- Blog Section -->
+            <div id="blog" class="blog section">
+                <h2>Blog Section</h2>
+                <div class="line"></div>
+                <p>
+                    To edit the text in 'Blog Section' Open the <span>index.html</span> file using any text editor then look for the following code and replace yellow highlighted text.<br>
+                    To change blog images put your new images in 'images/blog' folder (recommended size 800px * 560px) then replace blue highlighted text with your new images's path, name and extension like this <span>"images/blog/1.jpg"</span>.<br>
+                    To change links of buttons replace red highlighted text with your own links and replace yellow highlighted text with your buttons name.
+                </p>
+                <pre>
+<span>&lt;!-- ========== Start Blog ========== --></span>
+
+&lt;section class="blog" id="blog">
+    &lt;div class="container">
+        &lt;div class="main-title">
+            &lt;h3><span class="yellow">My Blog</span>&lt;/h3>
+            &lt;h2><span class="yellow">Latest Posts</span>&lt;/h2>
+        &lt;/div>
+        &lt;div class="row">
+            &lt;!-- New Item -->
+            &lt;div class="col-md-4">
+                &lt;div class="post wow fadeInUp" data-wow-duration="1.7s" data-wow-delay=".5s">
+                    &lt;!-- Post Image -->
+                    &lt;div class="post-img">
+                        &lt;img src="<span class="blue">https://via.placeholder.com/800x560</span>" class="img-responsive" alt="">
+                    &lt;/div>
+                    &lt;!-- Post Content -->
+                    &lt;div class="post-content">
+                        &lt;div class="post-title">
+                            &lt;a href="<span class="red">#</span>">&lt;h4><span class="yellow">Post Title Goes Here</span>&lt;/h4>&lt;/a>
+                        &lt;/div>
+                        &lt;ul class="post-info list-unstyled">
+                            &lt;li>
+                                &lt;i class="fa fa-calendar">&lt;/i>
+                                &lt;span><span class="yellow">20 Nov 19</span>&lt;/span>
+                            &lt;/li>
+                             &lt;li>
+                                &lt;i class="fa fa-commenting-o">&lt;/i>
+                                &lt;a href="<span class="red">#</span>">&lt;span><span class="yellow">3 Comment</span>&lt;/span>&lt;/a>
+                            &lt;/li>
+                        &lt;/ul>
+                        &lt;div class="post-text">
+                            &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ut...</span>&lt;/p>
+                        &lt;/div>
+                        &lt;a href="<span class="red">#</span>" class="post-more"><span class="yellow">Read more</span>&lt;/a>
+                    &lt;/div>
+                    &lt;div class="post-category">
+                        &lt;a href="<span class="red">#</span>"><span class="yellow">Design</span>&lt;/a>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+            &lt;!-- New Item -->
+            &lt;div class="col-md-4">
+                &lt;div class="post wow fadeInUp" data-wow-duration="1.7s" data-wow-delay="1s">
+                    &lt;!-- Post Image -->
+                    &lt;div class="post-img">
+                        &lt;img src="<span class="blue">https://via.placeholder.com/800x560</span>" class="img-responsive" alt="">
+                    &lt;/div>
+                    &lt;!-- Post Content -->
+                    &lt;div class="post-content">
+                        &lt;div class="post-title">
+                            &lt;a href="<span class="red">#</span>">&lt;h4><span class="yellow">Post Title Goes Here</span>&lt;/h4>&lt;/a>
+                        &lt;/div>
+                        &lt;ul class="post-info list-unstyled">
+                            &lt;li>
+                                &lt;i class="fa fa-calendar">&lt;/i>
+                                &lt;span><span class="yellow">24 Nov 19</span>&lt;/span>
+                            &lt;/li>
+                             &lt;li>
+                                &lt;i class="fa fa-commenting-o">&lt;/i>
+                                &lt;a href="<span class="red">#</span>">&lt;span><span class="yellow">6 Comment</span>&lt;/span>&lt;/a>
+                            &lt;/li>
+                        &lt;/ul>
+                        &lt;div class="post-text">
+                            &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ut...</span>&lt;/p>
+                        &lt;/div>
+                        &lt;a href="<span class="red">#</span>" class="post-more"><span class="yellow">Read more</span>&lt;/a>
+                    &lt;/div>
+                    &lt;div class="post-category">
+                        &lt;a href="<span class="red">#</span>"><span class="yellow">Logo</span>&lt;/a>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+            &lt;!-- New Item -->
+            &lt;div class="col-md-4">
+                &lt;div class="post wow fadeInUp" data-wow-duration="1.7s" data-wow-delay="1.5s">
+                    &lt;!-- Post Image -->
+                    &lt;div class="post-img">
+                        &lt;img src="<span class="blue">https://via.placeholder.com/800x560</span>" class="img-responsive" alt="">
+                    &lt;/div>
+                    &lt;!-- Post Content -->
+                    &lt;div class="post-content">
+                        &lt;div class="post-title">
+                            &lt;a href="<span class="red">#</span>">&lt;h4><span class="yellow">Post Title Goes Here</span>&lt;/h4>&lt;/a>
+                        &lt;/div>
+                        &lt;ul class="post-info list-unstyled">
+                            &lt;li>
+                                &lt;i class="fa fa-calendar">&lt;/i>
+                                &lt;span><span class="yellow">30 Nov 19</span>&lt;/span>
+                            &lt;/li>
+                             &lt;li>
+                                &lt;i class="fa fa-commenting-o">&lt;/i>
+                                &lt;a href="<span class="red">#</span>">&lt;span><span class="yellow">6 Comment</span>&lt;/span>&lt;/a>
+                            &lt;/li>
+                        &lt;/ul>
+                        &lt;div class="post-text">
+                            &lt;p><span class="yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ut...</span>&lt;/p>
+                        &lt;/div>
+                        &lt;a href="<span class="red">#</span>" class="post-more"><span class="yellow">Read more</span>&lt;/a>
+                    &lt;/div>
+                    &lt;div class="post-category">
+                        &lt;a href="<span class="red">#</span>"><span class="yellow">Branding</span>&lt;/a>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>        
+        &lt;/div>
+    &lt;/div>
+&lt;/section>
+
+<span>&lt;!-- ========== End Blog ========== --&gt;</span></pre>
+                <p>
+                    Save the file and refresh your browser.
+                </p>
+            </div>
+            <!-- Blog Section -->
+            
+            <!-- Contact Section -->
+            <div id="contact" class="contact section">
+                <h2>Contact Section</h2>
+                <div class="line"></div>
+                <p>
+                    To edit the text in 'Contact Section' Open the <span>index.html</span> file using any text editor then look for the following code and replace yellow highlighted text.<br>
+                    To change form action replace red highlighted text with your link.
+                </p>
+                <pre>
+<span>&lt;!-- ========== Start Contact ========== --></span>
+
+&lt;section class="contact" id="contact">
+    &lt;div class="container">
+        &lt;div class="main-title">
+            &lt;h3><span class="yellow">Contact Me</span>&lt;/h3>
+            &lt;h2><span class="yellow">Get In Touch</span>&lt;/h2>
+        &lt;/div>
+        &lt;div class="row">
+            &lt;div class="col-md-8">
+                &lt;form class="contact-form" action="<span class="red">#</span>" method="post">
+                    &lt;div class="form-group">
+                        &lt;input type="text" class="form-control" placeholder="Name" name="name" required>
+                    &lt;/div>
+                    &lt;div class="form-group">
+                        &lt;input type="email" class="form-control" placeholder="Email" name="email" required>
+                    &lt;/div>
+                    &lt;div class="form-group">
+                        &lt;input type="text" class="form-control" placeholder="Subject" name="subject" required>
+                    &lt;/div>
+                    &lt;div class="form-group">
+                        &lt;textarea class="form-control" placeholder="Your Message" name="message" required>&lt;/textarea>
+                    &lt;/div>
+                    &lt;!-- Button Send Message  -->
+                    &lt;button class="contact-btn main-btn" type="submit" name="send">Send Message&lt;/button>
+                &lt;/form> 
+            &lt;/div>
+            &lt;div class="col-md-4">
+                &lt;div class="contact-boxes">
+                    &lt;div class="contact-box">
+                        &lt;span class="icon-box">&lt;i class="fa fa-map-marker">&lt;/i>&lt;/span>
+                        &lt;h4 class="title-box"><span class="yellow">Location</span>&lt;/h4>
+                        &lt;div class="content-box">
+                            &lt;p><span class="yellow">NewYork, USA</span>&lt;/p>
+                            &lt;p><span class="yellow">12 Street Name</span>&lt;/p>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;div class="contact-box">
+                        &lt;span class="icon-box">&lt;i class="fa fa-envelope">&lt;/i>&lt;/span>
+                        &lt;h4 class="title-box"><span class="yellow">Email</span>&lt;/h4>
+                        &lt;div class="content-box">
+                            &lt;p><span class="yellow">Support@example.com</span>&lt;/p>
+                            &lt;p><span class="yellow">Support@example.com</span>&lt;/p>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;div class="contact-box">
+                        &lt;span class="icon-box">&lt;i class="fa fa-phone">&lt;/i>&lt;/span>
+                        &lt;h4 class="title-box"><span class="yellow">Phone</span>&lt;/h4>
+                        &lt;div class="content-box">
+                            &lt;p><span class="yellow">+1 212 485-4512</span>&lt;/p>
+                            &lt;p><span class="yellow">+1 212 456-1478</span>&lt;/p>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;div class="contact-box">
+                        &lt;span class="icon-box">&lt;i class="fa fa-globe">&lt;/i>&lt;/span>
+                        &lt;h4 class="title-box"><span class="yellow">Website</span>&lt;/h4>
+                        &lt;div class="content-box">
+                            &lt;p><span class="yellow">www.yourdomain.com</span>&lt;/p>
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/section>
+                
+<span>&lt;!-- ========== End Contact ========== --&gt;</span></pre>
+                <p>
+                    Save the file and refresh your browser.
+                </p>
+            </div>
+            <!-- Contact Section -->
+            
+            <!-- Footer Section -->
+            <div id="footer" class="footer section">
+                <h2>Footer</h2>
+                <div class="line"></div>
+                <p>
+                    To change the footer social icons link just open the <span>index.html</span> file and search for the following code and replace red highlighted text with your own links.
+                </p>
+                <pre>
+<span>&lt;!-- ========== Start Footer ========== --></span>
+
+&lt;footer class="footer text-center" >
+    &lt;div class="container">
+        &lt;a class="logo" href="#">Step.&lt;/a>
+        &lt;ul class="footer-social-icons list-unstyled">
+            &lt;li>
+                &lt;a href="<span class="red">#</span>">
+                    &lt;i class="fa fa-facebook">&lt;/i>
+                &lt;/a>
+            &lt;/li>
+            &lt;li>
+                &lt;a href="<span class="red">#</span>">
+                    &lt;i class="fa fa-twitter">&lt;/i>
+                &lt;/a>
+            &lt;/li>
+            &lt;li>
+                &lt;a href="<span class="red">#</span>">
+                    &lt;i class="fa fa-behance">&lt;/i>
+                &lt;/a>
+            &lt;/li>
+            &lt;li>
+                &lt;a href="<span class="red">#</span>">
+                    &lt;i class="fa fa-dribbble">&lt;/i>
+                &lt;/a>
+            &lt;/li>
+            &lt;li>
+                &lt;a href="<span class="red">#</span>">
+                    &lt;i class="fa fa-linkedin">&lt;/i>
+                &lt;/a>
+            &lt;/li>
+        &lt;/ul>
+        &lt;div class="copyright">
+            &lt;p>All Right Reserved &copy; 2019 &lt;a href="#">ThemeMix&lt;/a>&lt;/p>
+        &lt;/div>
+    &lt;/div>
+&lt;/footer>
+                
+<span>&lt;!-- ========== End Footer ========== --&gt;</span></pre>
+                <p>
+                    Save the file and refresh your browser.
+                </p>
+            </div>
+            <!-- Footer Section -->
+            
+            <!-- Thank You -->
+            <div id="thank-you" class="section">
+                <h2>Thank You</h2>
+                <div class="line"></div>
+                <p>
+                    Finally thank you very much for choosing this template. Please keep in mind that we are working very hard to providing better quality in coming days.
+                </p>
+                <p>
+                    If you have any questions that are beyond the scope of this help file, please contact me via my profile.
+                </p>
+            </div> 
+            <!-- Thank You -->
+            
+        </div>
+        
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery.nicescroll.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>
